@@ -19,7 +19,7 @@ This dashboard allows HR teams to:
 """)
 
 # Load Model
-model = pickle.load(open("C:\\Users\\Anushka\\Downloads\\Employee_Attrition_Project\\rf_model.pkl", "rb"))
+model = pickle.load(open("rf_model.pkl", "rb"))
 # Load Data
 df = pd.read_csv("WA_Fn-UseC_-HR-Employee-Attrition.csv")
 df['Attrition'] = df['Attrition'].map({'Yes': 1, 'No': 0})
